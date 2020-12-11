@@ -1,0 +1,377 @@
+/* FONTES */
+@font-face {
+    font-family: 'futura_lt_btlight';
+    src: url('../fonts/futult-webfont.woff2') format('woff2'),
+         url('../fonts/futult-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Futura lt BT', sans-serif;
+    color: #7d8190;
+}
+
+/* CABEÇALHO */
+.nav{
+    max-width: 960px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+.nav .mainMenu li a {
+    display: flex;
+    justify-content: space-around;
+    color: #7d8190;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    list-style: none;
+}
+.nav .mainMenu li a:hover {
+    color: #cce26a;
+}
+.nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    color: #cce26a;
+    cursor: pointer;
+}
+.nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.logo-header{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+/* MENU */
+
+main{
+    max-width: 960px;
+    margin: 40px auto;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidershow{
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .slidershow h1{
+    position: absolute;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 2.75em;
+    font-weight: normal;
+}
+
+  .navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .bar{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 3px solid #e1e1e1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background-color: #cce26a;
+    border: transparent;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+    display: flex;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 40%;
+  }
+  #r2:checked ~ .s1{
+    margin-left: 20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: 0;
+  }
+
+.intro-text{
+    max-width: 840px;
+    text-align: center;
+}
+
+.intro-text h2{
+    margin: 50px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+/* NOTÍCIAS */
+
+section{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.news-header{
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.news-header h2{
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #cce26a;
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.news{
+    margin: 0 20px 0 10px;
+}
+
+.news h3{
+    margin: 5px 0 15px 0;
+    font-weight: normal;
+    color: #cce26a;
+}
+
+.news p{
+    width: 320px;
+    margin-bottom: 60px;
+}
+
+/* FOOTER */
+
+footer{
+    max-width: 960px;
+    margin: 50px auto;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e1e1e1;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.newsletter p{
+    max-width: 380px;
+    font-size: 1.125em;
+    margin-bottom: 20px;
+}
+
+.newsletter input{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    font-family: 'Futura lt BT', sans-serif;
+    letter-spacing: 1px;
+    border: 1px solid #e1e1e1;
+    color: #e1e1e1;
+}
+
+.newsletter a{
+    font-size: 1.115em;
+    color: #cce26a;
+    border-bottom: 1px solid #cce26a;
+    align-self: flex-end;
+}
+
+.address{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.address p{
+    margin-bottom: 5px;
+    font-size: 1.105em;
+}
+
+.address p:nth-child(3){
+    margin-bottom: 30px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1025px){
+    .slide img{
+        width: 500%;
+      }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 925px){
+    footer{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1px solid #e1e1e1;
+    }
+
+    .newsletter{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter a{
+        align-self: center;
+        margin-bottom: 25px;
+    }
+
+    .address{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #cce26a;
+        transition: top 1s ease;
+        display: none;
+    }
+    .nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    .nav .openMenu {
+        display: block;
+    }
+
+    .nav .mainMenu li a {
+        color: #ffffff;
+        font-size: 1.6rem;
+    }
+    .nav .mainMenu li a:hover {
+        color: #ffffff;
+        border-bottom: 3px solid #ffffff;
+    }
+
+    .logo-header img{
+        margin-left: 10px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 535px){
+
+    .slidershow h1{
+        font-size: 2em;
+    }
+
+    .intro-text h2{
+        font-size: 1.25em;
+    }
+
+    .address p{
+        margin-bottom: 15px;
+        font-size: 0.75em;
+    }
+}
